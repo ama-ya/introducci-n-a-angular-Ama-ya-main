@@ -1,0 +1,35 @@
+<style>
+  .main{
+    margin: 2px;
+    padding: 5%;
+    width: 70%;
+  }
+  .input, 
+  .input > *{
+    padding: 1%;
+    margin: 2px;
+  }
+</style>
+
+<main class="main">
+  <div class="container-fluid">
+    <div class="input">
+      <label for="usuario">Usuario:</label>
+      <input [(ngModel)]="usuario" type="text" id="usuario" placeholder="Nombre usuario...">
+      <button type="submit" (click)="obtenerDatosGitHub()" class="btn btn-primary">Enviar</button>
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="existe">
+      <span>El usuario no existe.</span>
+    </div>
+    <hr>
+    <div *ngIf="oculto" class="card" style="width: 18rem;">
+      <img [src]="datosUsuario.avatar_url" class="card-img-top" alt="avatar">
+      <div class="card-body">
+        <h5 class="card-title">Login: {{ datosUsuario.login }} </h5>
+        <a [href]="datosUsuario.html_url" class="btn btn-primary">URL {{ datosUsuario.login }} </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<router-outlet />
