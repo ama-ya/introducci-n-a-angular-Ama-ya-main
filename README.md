@@ -1,15 +1,15 @@
 # ProyectoAngular
 
-* Buscador de usuarios de GitHub: versión en Angular
+## Buscador de usuarios de GitHub: versión en Angular
 
-Práctica realizada en el módulo Desarrollo Web en Entorno Cliente, donde se desarrolla una aplicación *Angular* para *buscar usuarios de GitHub*. Se introduce el *nombre de usuario* en un *campo de texto* y si el usuario no existe, se muestra un mensaje indicándolo; si el usuario existe, se muestra su *login*, la *imagen de avatar* y un *enlace* a su *página personal de GitHub*.
+Práctica realizada en el módulo **Desarrollo Web en Entorno Cliente**, donde se desarrolla una aplicación **Angular** para **buscar usuarios de GitHub**. Se introduce el **nombre de usuario** en un **campo de texto** y si el usuario no existe, se muestra un mensaje indicándolo; si el usuario existe, se muestra su **login**, la **imagen de avatar** y un **enlace** a su **página personal de GitHub**.
 
-Para obtener los datos se utiliza la *API de GitHub*. Con la URL ~https://api.github.com/users/{USER}~, siendo ~{USER}~ el nombre de usuario.
+Para obtener los datos se utiliza la **API de GitHub**. Con la URL https://api.github.com/users/{USER}, siendo `{USER}` el nombre de usuario.
 
-Los datos devueltos por la API están en formato *JSON*. La petición a la URL indicada devuelve un *objeto* con un conjunto de propiedades. Las propiedades que almacenan la información pedida son:
-- ~login~ - Almacena el login del usario.
-- ~avatar_url~ - Almacena la ruta a la imagen de avatar del usuario.
-- ~html_url~ - Almacena la página personal de GitHub del usuario.
+Los datos devueltos por la API están en formato **JSON**. La petición a la URL indicada devuelve un **objeto** con un conjunto de propiedades. Las propiedades que almacenan la información pedida son:
+- login - Almacena el login del usario.
+- avatar_url - Almacena la ruta a la imagen de avatar del usuario.
+- html_url - Almacena la página personal de GitHub del usuario.
 
 
 
